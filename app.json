@@ -1,7 +1,7 @@
 {
-  "name": "Yukki AFK Bot",
-  "description": "Simple and Powerful Telegram's AFK Bot written in Pyrogram using MongoDB.",
-  "logo": "https://telegra.ph/file/78bc88b883b22024002cd.jpg",
+  "name": "DSP",
+  "description": "I'm Pro",
+  "logo": "https://telegra.ph/file/7edaa1ebdd4061f4b12d2.jpg",
   "keywords": [
     "yukki",
     "mongodb",
@@ -22,27 +22,27 @@
     "API_ID": {
       "description": "Get this value from my.telegram.org/apps.",
       "required": true,
-      "value": ""
+      "value": "9850297"
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org/apps.",
       "required": true,
-      "value": ""
+      "value": "4e431723b5a68372db0e35a5486bd2fc"
     },
     "BOT_TOKEN": {
       "description": "A Bot token from @BotFather",
       "required": true,
-      "value": ""
+      "value": "5505658958:AAEBTgi9_jmCXcNGa-xoFKBzoYP_hwplTxc"
     },
     "MONGO_DB_URI": {
       "description": "Get a mongodb url from https://cloud.mongodb.com.",
       "required": true,
-      "value": ""
+      "value": "mongodb+srv://quinella03:quinellaBB@cluster0.mf71m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     },
     "SUDO_USER": {
       "description": "The user id(s) of user(s) whom you would like to add as a SUDO_USER, Multiple values shall be seperated with a space.",
       "required": true,
-      "value": ""
+      "value": "1302714537"
     }
   }
 }
