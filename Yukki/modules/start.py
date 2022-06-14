@@ -48,3 +48,9 @@ async def run(client, message):
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0FZiqLivDE15hr0iUXXB3uLKkm4iGQACvQIAAm9fSEXTjPhY1VGe5SQE")
     await message.reply_text(f"I Really Think You should be in Zoo 😂")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0FliqLkzC0-vr0HKeCxg-QfbH8IW0gACbgIAAgnDSEVqYh91csOLqyQE")
+    await message.reply_text(f"")
+    await app.send_sticker(message.chat.id,"
+    await message.reply_text(f"")
+    await app.send_sticker(message.chat.id,"
+    await message.reply_text(f"")
+    await app.send_sticker(message.chat.id,"
