@@ -26,4 +26,5 @@ async def on_start(_, message: Message):
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz5xiqJ8lua3WkPXNejoDnwKzJhahVgAC8QMAArrmQEWX3cjH0A_IbiQE")
 
 @app.on_message(filters.command(["start", "ping"]))
+async def start(client, message):
     await message.reply_text(
