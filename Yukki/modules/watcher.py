@@ -252,8 +252,9 @@ async def welcome(_, message: Message):
     for member in message.new_chat_members:
         try:
             if member.id == botid:
-                return await message.reply_text(
+                await message.reply_text(
                     f"Thanks for having me in {message.chat.title}\n\n{botname} is alive."
                 )
+                return await app.send_sticker(message.chat.id,"CAACAgUAAx0Cak5fVgABBiutYnzuLoHovOpsydapxzdpeGPn4kEAAqcFAALvw7lUqFiXebelCpskBA")
         except:
             return
