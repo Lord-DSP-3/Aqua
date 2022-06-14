@@ -25,17 +25,17 @@ async def on_start(_, message: Message):
     )
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz7xiqKSb-T2ZG9im-K7pMdlJ_kZSmQACNwIAAsuOSEX5bh5-Omr7jSQE")
 
-@app.on_message(filters.command(["run"]))
+@app.on_message(filters.command(["settings"]))
 async def run(client, message):
     await message.reply_text(f"Only For Authorised Users")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz8BiqKWONbh60S0bp-mCUv3SLhNVCQACDgMAAmM1QEVoYvfpiYqB_SQE")
 
-    @app.on_message(filters.command(["run"]))
+@app.on_message(filters.command(["help"]))
 async def run(client, message):
-    await message.reply_text(f"Only For Authorised Users")
-    await app.send_sticker(message.chat.id,"
+    await message.reply_text(f"Join 💚 @Anime_Gaming_Chat_Global 💛 if you need any help.")
+    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz-hiqK7ULTKZTWvsw5lVTf83G-ielgACbgIAAgnDSEVqYh91csOLqyQE")
 
-   @app.on_message(filters.command(["run"]))
+@app.on_message(filters.command(["scan"]))
 async def run(client, message):
     await message.reply_text(f"Only For Authorised Users")
-    await app.send_sticker(message.chat.id,"
+    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0AFiqLFq96XquupWkC3Wjww8cIo8HwACRAIAAtSXSEXU4M20BCBnFCQE")
