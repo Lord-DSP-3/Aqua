@@ -21,10 +21,25 @@ async def on_start(_, message: Message):
     bot_uptime = int(time.time() - boot)
     Uptime = get_readable_time(bot_uptime)
     await message.reply_text(
-        f"Pretty Much Nothing For Normies \n Only AUTHORISED users..."
+        f"Pretty Much Nothing For Normies..."
     )
-    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz5xiqJ8lua3WkPXNejoDnwKzJhahVgAC8QMAArrmQEWX3cjH0A_IbiQE")
+    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz7xiqKSb-T2ZG9im-K7pMdlJ_kZSmQACNwIAAsuOSEX5bh5-Omr7jSQE")
 
 @app.on_message(filters.command(["run"]))
 async def run(client, message):
-    await message.reply_text(f"Hi")
+    await message.reply_text(f"Only For Authorised Users")
+    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz8BiqKWONbh60S0bp-mCUv3SLhNVCQACDgMAAmM1QEVoYvfpiYqB_SQE")
+    @app.on_message(filters.command(["run"]))
+
+async def run(client, message):
+
+    await message.reply_text(f"Only For Authorised Users")
+
+    await app.send_sticker(message.chat.id,"
+   @app.on_message(filters.command(["run"]))
+
+async def run(client, message):
+
+    await message.reply_text(f"Only For Authorised Users")
+
+    await app.send_sticker(message.chat.id,"
