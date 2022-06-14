@@ -21,5 +21,6 @@ async def on_start(_, message: Message):
     bot_uptime = int(time.time() - boot)
     Uptime = get_readable_time(bot_uptime)
     await message.reply_text(
-        f"{botname} is alive and working good.\n\nUptime : {Uptime}"
+        f"Pretty Much Nothing For Normies /n Only AUTHORISED users ;) "
     )
+    await app.send_sticker(message.chat.id,"CAACAgUAAx0Cak5fVgABBiutYnzuLoHovOpsydapxzdpeGPn4kEAAqcFAALvw7lUqFiXebelCpskBA")
