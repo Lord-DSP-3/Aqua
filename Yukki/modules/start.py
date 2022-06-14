@@ -24,12 +24,6 @@ async def on_start(_, message: Message):
         f"Pretty Much Nothing For Normies \n Only AUTHORISED users..."
     )
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz5xiqJ8lua3WkPXNejoDnwKzJhahVgAC8QMAArrmQEWX3cjH0A_IbiQE")
+
 @app.on_message(filters.command(["start", "ping"]))
-
-async def on_start(_, message: Message):
-
-    bot_uptime = int(time.time() - boot)
-
-    Uptime = get_readable_time(bot_uptime)
-
     await message.reply_text(
