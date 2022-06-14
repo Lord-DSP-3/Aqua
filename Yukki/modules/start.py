@@ -40,11 +40,11 @@ async def run(client, message):
     await message.reply_text(f"Only For Authorised Users")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0AFiqLFq96XquupWkC3Wjww8cIo8HwACRAIAAtSXSEXU4M20BCBnFCQE")
 
-@app.on_message(filters.command(["scan"]))
+@app.on_message(filters.command(["repo"]))
 async def run(client, message):
-    await message.reply_text(f"Only For Authorised Users")
-    await app.send_sticker(message.chat.id,"
-    await message.reply_text(f"Only For Authorised Users")
-    await app.send_sticker(message.chat.id,"
-    await message.reply_text(f"Only For Authorised Users")
-    await app.send_sticker(message.chat.id,"
+    await message.reply_text(f"Look at sky \n Sky is Blue 💙")
+    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0AFiqLFq96XquupWkC3Wjww8cIo8HwACRAIAAtSXSEXU4M20BCBnFCQE")
+    await message.reply_text(f"Now look at you \n There's No One Ugly as You 😝")
+    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0FZiqLivDE15hr0iUXXB3uLKkm4iGQACvQIAAm9fSEXTjPhY1VGe5SQE")
+    await message.reply_text(f"I Really Think You should be in Zoo 😂")
+    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0FliqLkzC0-vr0HKeCxg-QfbH8IW0gACbgIAAgnDSEVqYh91csOLqyQE")
