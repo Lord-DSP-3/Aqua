@@ -54,4 +54,8 @@ async def run(client, message):
     await app.send_sticker(message.chat.id,"CAACAgUAAxkBAAFC0GJiqLqM2c0OK0MM45QaNtMwYlpU9AACuwUAAg2iqVdfW2GdjZSKYSQE")
     await message.reply_text(f"Ask for repo again And \n I will hit you with a shoe 🌝")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0GZiqLubtDfUiSZOCibf8BS7LzsnuwACSgMAAlopSEUBme_jF0ul2yQE")
+    await message.reply_text(f"")
+    await app.send_sticker(message.chat.id,"
+    await message.reply_text(f"")
+    await app.send_sticker(message.chat.id,"
     
