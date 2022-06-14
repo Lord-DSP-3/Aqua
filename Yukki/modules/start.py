@@ -29,17 +29,13 @@ async def on_start(_, message: Message):
 async def run(client, message):
     await message.reply_text(f"Only For Authorised Users")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz8BiqKWONbh60S0bp-mCUv3SLhNVCQACDgMAAmM1QEVoYvfpiYqB_SQE")
+
     @app.on_message(filters.command(["run"]))
-
 async def run(client, message):
-
     await message.reply_text(f"Only For Authorised Users")
-
     await app.send_sticker(message.chat.id,"
+
    @app.on_message(filters.command(["run"]))
-
 async def run(client, message):
-
     await message.reply_text(f"Only For Authorised Users")
-
     await app.send_sticker(message.chat.id,"
