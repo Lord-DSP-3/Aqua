@@ -21,7 +21,7 @@ async def run(client, message):
 
 @app.on_message(filters.command(["help"]))
 async def run(client, message):
-    await message.reply_text(f"Join 💚")
+    await message.reply_text(f"Bot works on one simple cammand /afk \n You Can Write Specific Reason of AFK after cammand \n You Can Reply to a Media File to set it As AFK messege. \n 💚JOIN @Anime_Gaming_Chat_Global 💛 For Any other Jelp or issue regarding Bot. ")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz-hiqK7ULTKZTWvsw5lVTf83G-ielgACbgIAAgnDSEVqYh91csOLqyQE")
 
 @app.on_message(filters.command(["scan"]))
