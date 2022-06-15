@@ -255,6 +255,8 @@ async def welcome(_, message: Message):
                 await message.reply_text(
                     f"{botname} Successfully Added To {message.chat.title}"
                 )
-                return await app.send_sticker(message.chat.id,"CAACAgUAAx0Cak5fVgABBiutYnzuLoHovOpsydapxzdpeGPn4kEAAqcFAALvw7lUqFiXebelCpskBA")
+                await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC1fpiqTrelzNSJBIlF2hVU6AQUqGYagACggIAAvQFQUVHB-09TVmKFyQE")
+                await message.reply_text(f"Thanks For having me here.")
+                return await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC1f1iqTsKjRCtyv3GscMMnS73BhzduAACbwIAAjJQSUX9_KMEvZZkVSQE")
         except:
             return
