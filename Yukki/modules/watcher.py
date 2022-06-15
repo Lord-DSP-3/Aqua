@@ -45,7 +45,7 @@ async def chat_watcher_func(_, message):
             if afktype == "text":
                 msg += f"**{user_name[:25]}** test watch {seenago}\n\n"
             if afktype == "text_reason":
-                msg += f"**{user_name[:25]}** is back online and was away for {seenago}\n\nReason: `{reasonafk}`\n\n"
+                msg += f"**{user_name[:25]}** Test watch Re: {seenago}\n\nReason: `{reasonafk}`\n\n"
             if afktype == "animation":
                 if str(reasonafk) == "None":
                     await message.reply_animation(
