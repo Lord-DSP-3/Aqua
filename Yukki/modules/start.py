@@ -17,7 +17,7 @@ async def on_start(_, message: Message):
 @app.on_message(filters.command(["settings"]))
 async def run(client, message):
     await message.reply_text(f"Only For Authorised Users")
-    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz8BiqKWONbh60S0bp-mCUv3SLhNVCQACDgMAAmM1QEVoYvfpiYqB_SQE")
+
 
 @app.on_message(filters.command(["help"]))
 async def run(client, message):
@@ -27,7 +27,7 @@ async def run(client, message):
 @app.on_message(filters.command(["scan"]))
 async def run(client, message):
     await message.reply_text(f"Only For Authorised Users")
-    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0AFiqLFq96XquupWkC3Wjww8cIo8HwACRAIAAtSXSEXU4M20BCBnFCQE")
+    InlineKeyboardButton ("hi", url=f"https://t.me/Anime_Chat_group_japan")
 
 @app.on_message(filters.command(["repo"]))
 async def run(client, message):
@@ -55,4 +55,4 @@ async def on_start(_, message: Message):
     await message.reply_text(
         f"{botname} is alive and working good.\n\nUptime : {Uptime}"
     )
-    
+    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC3hNiqaNlV1mevOdOu1jDjAsSRWgBGQACtwIAAuYuSEV3tv6QBNjZvSQE")
