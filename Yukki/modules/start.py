@@ -7,10 +7,8 @@ from Yukki import app, boot, botname
 from Yukki.helpers import get_readable_time
 
 
-@app.on_message(filters.command(["start", "ping"]))
+@app.on_message(filters.command(["start"]))
 async def on_start(_, message: Message):
-    bot_uptime = int(time.time() - boot)
-    Uptime = get_readable_time(bot_uptime)
     await message.reply_text(
         f"Pretty Much Nothing For Normies..."
     )
@@ -23,7 +21,7 @@ async def run(client, message):
 
 @app.on_message(filters.command(["help"]))
 async def run(client, message):
-    await message.reply_text(f"Join 💚 @Anime_Gaming_Chat_Global 💛 if you need any help.")
+    await message.reply_text(f"Join 💚")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz-hiqK7ULTKZTWvsw5lVTf83G-ielgACbgIAAgnDSEVqYh91csOLqyQE")
 
 @app.on_message(filters.command(["scan"]))
@@ -49,4 +47,12 @@ async def run(client, message):
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0GxiqLzmpch1zZbA87pClhIrqg1jGgACxwMAAs72QEUySsl-a4Af0CQE")
     await message.reply_text(f"Ok i think this is GOODBYE ! 🎋💕")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0G9iqL0J8n28bWQS4_U3ziLujmHOoAACXgIAAm53SEW3PHkJlNtQ9iQE")
+
+@app.on_message(filters.command(["ping"]))
+async def on_start(_, message: Message):
+    bot_uptime = int(time.time() - boot)
+    Uptime = get_readable_time(bot_uptime)
+    await message.reply_text(
+        f"{botname} is alive and working good.\n\nUptime : {Uptime}"
+    )
     
