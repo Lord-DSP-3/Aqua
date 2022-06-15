@@ -43,7 +43,7 @@ async def chat_watcher_func(_, message):
             reasonafk = reasondb["reason"]
             seenago = get_readable_time((int(time.time() - timeafk)))
             if afktype == "text":
-                msg += f"**{user_name[:25]}** is back online and was away for {seenago}\n\n"
+                msg += f"**{user_name[:25]}** test watch {seenago}\n\n"
             if afktype == "text_reason":
                 msg += f"**{user_name[:25]}** is back online and was away for {seenago}\n\nReason: `{reasonafk}`\n\n"
             if afktype == "animation":
