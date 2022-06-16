@@ -26,8 +26,21 @@ async def run(client, message):
 
 @app.on_message(filters.command(["scan"]))
 async def run(client, message):
-    await message.reply_text(f"Only For Authorised Users")
-    InlineKeyboardButton ("hi", url=f"https://t.me/Anime_Chat_group_japan")
+    await message.reply_photo(photo="https://telegra.ph/file/1e4adde1013173fc6dedb.jpg")
+    reply_markup=InlineKeyboardMarkup(
+
+            [
+
+                [                   
+
+                    InlineKeyboardButton(
+
+                        "😕Commands & Help😕 ", callback_data="cbbasic"
+
+                    ),
+
+                ],
+   
 
 @app.on_message(filters.command(["repo"]))
 async def run(client, message):
