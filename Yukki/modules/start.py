@@ -22,7 +22,7 @@ async def run(client, message):
 
 @app.on_message(filters.command(["help"]))
 async def run(client, message):
-    await message.reply_text(f"💚JOIN @Anime_Gaming_Chat_Global 💛 For Any help or issue regarding Bot. ")
+    await message.reply_text(f"If you need any help join \n💚 @Anime_Gaming_Chat_Global 💛")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz-hiqK7ULTKZTWvsw5lVTf83G-ielgACbgIAAgnDSEVqYh91csOLqyQE")
 
 @app.on_message(filters.command(["scan"]))
@@ -56,29 +56,3 @@ async def on_start(_, message: Message):
         f"{botname} is alive and working good.\n\nUptime : {Uptime}"
     )
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC3hNiqaNlV1mevOdOu1jDjAsSRWgBGQACtwIAAuYuSEV3tv6QBNjZvSQE")
-
-@Client.on_message(filters.command(["test"]))
-async def start(client, message):
-   buttons = [
-            [
-                InlineKeyboardButton("❔ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", url=f"https://t.me/Lord_DSP_3"),
-            ],
-            [
-                InlineKeyboardButton("💥 Sᴏᴜʀᴄᴇ", url=f"https://t.me/Lord_DSP_3"),
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ 📢", url=f"https://t.me/Lord_DSP_3"),
-            ],
-            [
-                InlineKeyboardButton("🤖 Bᴏᴛ Lɪꜱᴛ", url=f"https://t.me/DeeCodeBots/32"),
-                InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 👥", url=f"https://t.me/Lord_DSP_3"),
-            ],
-            [
-               InlineKeyboardButton("💞 Sᴜᴍᴍᴏɴ Mᴇ 💞", url=f"https://t.me/Lord_DSP_3"),
-            ]
-            ]
-   reply_markup = InlineKeyboardMarkup(buttons)
-   if message.chat.type == 'private':
-      m=await message.reply_photo(
-                                  photo="https://telegra.ph/file/1ca2830c014aa6b8b62e7.jpg", 
-                                  caption="hihihihihihu",
-                                  reply_markup=reply_markup
-      )      
