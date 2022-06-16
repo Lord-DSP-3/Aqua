@@ -22,7 +22,7 @@ async def run(client, message):
 
 @app.on_message(filters.command(["help"])& filters.private)
 async def run(client, message):
-    await message.reply_text(f"⛑️Promote me as Admin in group.\n⌱Only 'delete messesge' rights required.\n\n💚Usage of Afk command:\n/afk")
+    await message.reply_text(f"⛑️Promote me as Admin in group.\n⌱Only 'delete messesge' rights required.\n\n💚Usage of Afk command:\n/afk /afk Reason \n/afk (reply to a sticker) \n/afk (reply to a sticker) Reason \n/afk (reply to a image) \n/afk (reply to a image) Reason\n\n💛Others:\n/ping  - To see bot Uptime \n/repo  - Source code \n\n\n📜 ⌱ UCO PROJECT")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz-hiqK7ULTKZTWvsw5lVTf83G-ielgACbgIAAgnDSEVqYh91csOLqyQE")
 
 @app.on_message(filters.command(["scan"])& filters.private)
