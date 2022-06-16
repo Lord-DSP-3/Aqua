@@ -56,7 +56,7 @@ async def on_start(_, message: Message):
     )
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC3hNiqaNlV1mevOdOu1jDjAsSRWgBGQACtwIAAuYuSEV3tv6QBNjZvSQE")
 
-@Client.on_message(filters.command("start"))
+@Client.on_message(filters.command("test"))
 async def start(client, message):
    buttons = [
             [
