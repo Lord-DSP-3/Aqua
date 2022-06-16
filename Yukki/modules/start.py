@@ -20,7 +20,7 @@ async def run(client, message):
     await message.reply_text(f"Only For Authorised Users")
 
 
-@app.on_message(filters.command(["help"]))
+@app.on_message(filters.command(["help"])& filters.private)
 async def run(client, message):
     await message.reply_text(f"If you need any help join \n💚 @Anime_Gaming_Chat_Global 💛")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz-hiqK7ULTKZTWvsw5lVTf83G-ielgACbgIAAgnDSEVqYh91csOLqyQE")
