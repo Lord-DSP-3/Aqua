@@ -24,7 +24,7 @@ async def active_afk(_, message: Message):
             seenago = get_readable_time((int(time.time() - timeafk)))
             if afktype == "text":
                 return await message.reply_text(
-                    f"**{message.from_user.first_name}** edited Text Test {seenago}",
+                    f"**{message.from_user.first_name}** is back online and was away for {seenago}",
                     disable_web_page_preview=True,
                 )
             if afktype == "text_reason":
