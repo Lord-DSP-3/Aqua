@@ -8,14 +8,14 @@ from Yukki import app, boot, botname
 from Yukki.helpers import get_readable_time
 
 
-@app.on_message(filters.command(["start"])& filters.private) 
+@app.on_message(filters.command(["start"])) 
 async def on_start(_, message: Message):
     await message.reply_text(
         f"Pretty Much Nothing For Normies..."
     )
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz7xiqKSb-T2ZG9im-K7pMdlJ_kZSmQACNwIAAsuOSEX5bh5-Omr7jSQE")
 
-@app.on_message(filters.command(["settings"]))
+@app.on_message(filters.command(["settings"])& filters.private)
 async def run(client, message):
     await message.reply_text(f"Only For Authorised Users")
 
@@ -25,11 +25,11 @@ async def run(client, message):
     await message.reply_text(f"If you need any help join \n💚 @Anime_Gaming_Chat_Global 💛")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz-hiqK7ULTKZTWvsw5lVTf83G-ielgACbgIAAgnDSEVqYh91csOLqyQE")
 
-@app.on_message(filters.command(["scan"]))
+@app.on_message(filters.command(["scan"])& filters.private)
 async def run(client, message):
     await message.reply_text(f"Only For Authorised Users")
 
-@app.on_message(filters.command(["repo"]))
+@app.on_message(filters.command(["repo"])& filters.private)
 async def run(client, message):
     await message.reply_text(f"Look at sky \n Sky is Blue 💙")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0AFiqLFq96XquupWkC3Wjww8cIo8HwACRAIAAtSXSEXU4M20BCBnFCQE")
