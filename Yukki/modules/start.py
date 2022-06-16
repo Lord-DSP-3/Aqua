@@ -1,5 +1,6 @@
 import time
-
+from pyrogram import Client
+from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import filters
 from pyrogram.types import Message
 
