@@ -31,7 +31,7 @@ async def run(client, message):
             [
                 [                   
                     InlineKeyboardButton(
-                        "😕Commands & Help😕 ", callback_data="cbbasic"
+                        "hi 🎀⚜️", url="https://t.me/Anime_Gaming_Chat_Global"
                     ),
                 ],
    
