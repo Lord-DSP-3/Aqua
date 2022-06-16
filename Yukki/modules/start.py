@@ -8,7 +8,7 @@ from Yukki import app, boot, botname
 from Yukki.helpers import get_readable_time
 
 
-@app.on_message(filters.command(["start"])) & filters.private
+@app.on_message(filters.command(["start"])& filters.private) 
 async def on_start(_, message: Message):
     await message.reply_text(
         f"Pretty Much Nothing For Normies..."
