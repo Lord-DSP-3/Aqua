@@ -56,16 +56,28 @@ async def on_start(_, message: Message):
     )
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC3hNiqaNlV1mevOdOu1jDjAsSRWgBGQACtwIAAuYuSEV3tv6QBNjZvSQE")
 
-@Client.on_message(filters.command("test"))
+@Client.on_message(filters.command("start"))
 async def start(client, message):
    buttons = [
             [
-                InlineKeyboardButton("❔ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", url="https://t.me/Anime_Gaming_Chat_Global"),
+                InlineKeyboardButton("❔ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="help"),
             ],
+            [
+                InlineKeyboardButton("💥 Sᴏᴜʀᴄᴇ", url=f"https://{SOURCE_CODE}"),
+                InlineKeyboardButton("Cʜᴀɴɴᴇʟ 📢", url=f"https://t.me/{UPDATES_CHANNEL}"),
+            ],
+            [
+                InlineKeyboardButton("🤖 Bᴏᴛ Lɪꜱᴛ", url=f"https://t.me/DeeCodeBots/32"),
+                InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
+            ],
+            [
+               InlineKeyboardButton("💞 Sᴜᴍᴍᴏɴ Mᴇ 💞", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+            ]
+            ]
    reply_markup = InlineKeyboardMarkup(buttons)
    if message.chat.type == 'private':
       m=await message.reply_photo(
                                   photo="https://telegra.ph/file/1ca2830c014aa6b8b62e7.jpg", 
-                                  caption="hehehehehe⛰️🌸",
+                                  caption=START_TEXT.format(message.from_user.first_name, message.from_user.id),
                                   reply_markup=reply_markup
       )      
