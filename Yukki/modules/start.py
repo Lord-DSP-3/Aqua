@@ -56,28 +56,28 @@ async def on_start(_, message: Message):
     )
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC3hNiqaNlV1mevOdOu1jDjAsSRWgBGQACtwIAAuYuSEV3tv6QBNjZvSQE")
 
-@Client.on_message(filters.command("start"))
+@Client.on_message(filters.command("test"))
 async def start(client, message):
    buttons = [
             [
-                InlineKeyboardButton("❔ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="help"),
+                InlineKeyboardButton("❔ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", url=f"https://t.me/Lord_DSP_3"),
             ],
             [
-                InlineKeyboardButton("💥 Sᴏᴜʀᴄᴇ", url=f"https://{SOURCE_CODE}"),
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ 📢", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton("💥 Sᴏᴜʀᴄᴇ", url=f"https://t.me/Lord_DSP_3"),
+                InlineKeyboardButton("Cʜᴀɴɴᴇʟ 📢", url=f"https://t.me/Lord_DSP_3"),
             ],
             [
                 InlineKeyboardButton("🤖 Bᴏᴛ Lɪꜱᴛ", url=f"https://t.me/DeeCodeBots/32"),
-                InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 👥", url=f"https://t.me/Lord_DSP_3"),
             ],
             [
-               InlineKeyboardButton("💞 Sᴜᴍᴍᴏɴ Mᴇ 💞", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+               InlineKeyboardButton("💞 Sᴜᴍᴍᴏɴ Mᴇ 💞", url=f"https://t.me/Lord_DSP_3"),
             ]
             ]
    reply_markup = InlineKeyboardMarkup(buttons)
    if message.chat.type == 'private':
       m=await message.reply_photo(
                                   photo="https://telegra.ph/file/1ca2830c014aa6b8b62e7.jpg", 
-                                  caption=START_TEXT.format(message.from_user.first_name, message.from_user.id),
+                                  caption="hihihihihihu",
                                   reply_markup=reply_markup
       )      
