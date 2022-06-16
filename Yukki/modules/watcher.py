@@ -244,10 +244,10 @@ async def welcome(_, message: Message):
         try:
             if member.id == botid:
                 await message.reply_text(
-                    f"{botname} Successfully Added To {message.chat.title}"
+                    f"Thanks for having me in {message.chat.title}."
                 )
                 await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC1fpiqTrelzNSJBIlF2hVU6AQUqGYagACggIAAvQFQUVHB-09TVmKFyQE")
-                await message.reply_text(f"Thanks For having me here.")
+                await message.reply_text(f"Hit the /help command To get usage of all Commands.")
                 return await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC1f1iqTsKjRCtyv3GscMMnS73BhzduAACbwIAAjJQSUX9_KMEvZZkVSQE")
         except:
             return
