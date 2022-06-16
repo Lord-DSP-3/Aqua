@@ -55,3 +55,17 @@ async def on_start(_, message: Message):
         f"{botname} is alive and working good.\n\nUptime : {Uptime}"
     )
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC3hNiqaNlV1mevOdOu1jDjAsSRWgBGQACtwIAAuYuSEV3tv6QBNjZvSQE")
+
+@Client.on_message(filters.command("start"))
+async def start(client, message):
+   buttons = [
+            [
+                InlineKeyboardButton("❔ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", url="https://t.me/Anime_Gaming_Chat_Global"),
+            ],
+   reply_markup = InlineKeyboardMarkup(buttons)
+   if message.chat.type == 'private':
+      m=await message.reply_photo(
+                                  photo="https://telegra.ph/file/1ca2830c014aa6b8b62e7.jpg", 
+                                  caption="hehehehehe⛰️🌸",
+                                  reply_markup=reply_markup
+      )      
