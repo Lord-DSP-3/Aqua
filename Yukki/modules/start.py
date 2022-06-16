@@ -45,7 +45,7 @@ async def run(client, message):
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0GZiqLubtDfUiSZOCibf8BS7LzsnuwACSgMAAlopSEUBme_jF0ul2yQE")
     await message.reply_text(f"If i do... \n Please You don't Cry ")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0GxiqLzmpch1zZbA87pClhIrqg1jGgACxwMAAs72QEUySsl-a4Af0CQE")
-    await message.reply_text(f"Ok i think this is GOODBYE ! 🎋💕")
+    await message.reply_text(f"And GOOD BYE ! 🎋💕")
     await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFC0G9iqL0J8n28bWQS4_U3ziLujmHOoAACXgIAAm53SEW3PHkJlNtQ9iQE")
 
 @app.on_message(filters.command(["ping"]))
