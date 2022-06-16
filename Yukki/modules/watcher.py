@@ -43,33 +43,33 @@ async def chat_watcher_func(_, message):
             reasonafk = reasondb["reason"]
             seenago = get_readable_time((int(time.time() - timeafk)))
             if afktype == "text":
-                msg += f"**{user_name[:25]}** test watch {seenago}\n\n"
+                msg += f"💚**{user_name[:25]}** is back online! ^_^ \n💛Afk since: {seenago}\n\n"
             if afktype == "text_reason":
-                msg += f"**{user_name[:25]}** Test watch Re: {seenago}\n\nReason: `{reasonafk}`\n\n"
+                msg += f"**{user_name[:25]}** is back online! ^_^ \nAfk since: {seenago}\n\nReason: `{reasonafk}`\n\n"
             if afktype == "animation":
                 if str(reasonafk) == "None":
                     await message.reply_animation(
                         data,
-                        caption=f"**{user_name[:25]}** is back online and was away for {seenago}\n\n",
+                        caption=f"**{user_name[:25]}** is back online! ^_^ \nAfk since: {seenago}\n\n",
                     )
                 else:
                     await message.reply_animation(
                         data,
-                        caption=f"**{user_name[:25]}** is back online and was away for {seenago}\n\nReason: `{reasonafk}`\n\n",
+                        caption=f"**{user_name[:25]}** is back online! ^_^ \nAfk since: {seenago}\n\nReason: `{reasonafk}`\n\n",
                     )
             if afktype == "photo":
                 if str(reasonafk) == "None":
                     await message.reply_photo(
                         photo=f"downloads/{userid}.jpg",
-                        caption=f"**{user_name[:25]}** is back online and was away for {seenago}\n\n",
+                        caption=f"**{user_name[:25]}** is back online! ^_^ \nAfk since: {seenago}\n\n",
                     )
                 else:
                     await message.reply_photo(
                         photo=f"downloads/{userid}.jpg",
-                        caption=f"**{user_name[:25]}** is back online and was away for {seenago}\n\nReason: `{reasonafk}`\n\n",
+                        caption=f"**{user_name[:25]}** is back online! ^_^ \nAfk since: {seenago}\n\nReason: `{reasonafk}`\n\n",
                     )
         except:
-            msg += f"**{user_name[:25]}** is back online\n\n"
+            msg += f"**{user_name[:25]}** is back online ⁄(⁄ ⁄•⁄-⁄•⁄ ⁄)⁄\n\n"
 
     # Replied to a User which is AFK
     if message.reply_to_message:
