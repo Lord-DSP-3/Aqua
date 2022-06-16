@@ -26,7 +26,7 @@ async def run(client, message):
 
 @app.on_message(filters.command(["scan"]))
 async def run(client, message):
-    await message.reply_text(fOnly For Authorised Users")
+    await message.reply_text(f"Only For Authorised Users")
 
 @app.on_message(filters.command(["repo"]))
 async def run(client, message):
