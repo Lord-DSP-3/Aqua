@@ -28,17 +28,11 @@ async def run(client, message):
 async def run(client, message):
     await message.reply_photo(photo="https://telegra.ph/file/1e4adde1013173fc6dedb.jpg")
     reply_markup=InlineKeyboardMarkup(
-
             [
-
                 [                   
-
                     InlineKeyboardButton(
-
                         "😕Commands & Help😕 ", callback_data="cbbasic"
-
                     ),
-
                 ],
    
 
