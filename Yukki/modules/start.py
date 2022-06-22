@@ -18,6 +18,6 @@ async def on_start(_, message: Message):
 
 @app.on_message(filters.command(["repo"])& filters.private)
 async def run(client, message):
-    await asyncio.sleep(3)
+    await asyncio.sleep(5)
     await message.delete()
     await message.reply_text(f"Look at sky \n Sky is Blue 💙")
