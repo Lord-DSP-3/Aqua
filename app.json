@@ -34,11 +34,6 @@
       "required": true,
       "value": "5505658958:AAEBTgi9_jmCXcNGa-xoFKBzoYP_hwplTxc"
     },
-    "MONGO_DB_URI": {
-      "description": "Get a mongodb url from https://cloud.mongodb.com.",
-      "required": true,
-      "value": "mongodb+srv://quinella03:quinellaBB@cluster0.mf71m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-    },
     "SUDO_USER": {
       "description": "The user id(s) of user(s) whom you would like to add as a SUDO_USER, Multiple values shall be seperated with a space.",
       "required": true,
