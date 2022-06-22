@@ -13,7 +13,7 @@ async def on_start(_, message: Message):
     await message.reply_text(
         f"Pretty Much Nothing For Normies..."
     )
-    await app.send_sticker(message.chat.id,"CAACAgEAAxkBAAFCz7xiqKSb-T2ZG9im-K7pMdlJ_kZSmQACNwIAAsuOSEX5bh5-Omr7jSQE")
+    return await message.reply_photo(photo="https://telegra.ph/file/df56751076ab5525b6d61.jpg")
 
 
 @app.on_message(filters.command(["repo"])& filters.private)
