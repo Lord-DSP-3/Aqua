@@ -16,7 +16,7 @@ async def on_start(_, message: Message):
     return await message.reply_photo(photo="https://telegra.ph/file/df56751076ab5525b6d61.jpg")
 
 
-@app.on_message(filters.command(["repo"])& filters.private)
+@app.on_message(filters.command(["repo"]))
 async def run(client, message):
     await asyncio.sleep(5)
     await message.delete()
