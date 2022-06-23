@@ -18,8 +18,7 @@ async def on_start(_, message: Message):
     return await message.reply_photo(photo="https://telegra.ph/file/df56751076ab5525b6d61.jpg")
 
 
-@app.on_message(filters.command(["testdel"]))
-async def testdel(_, message: Message):
+@app.on_message(filters.command(["protecc"]))
+async def protecc(_, message: Message):
     await asyncio.sleep(5)
     await message.delete()
-    await message.reply_text(f"Look at sky \n Sky is Blue 💙")
